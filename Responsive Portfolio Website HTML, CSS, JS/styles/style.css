@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+/* Cabeçalho */
 header {
     position: fixed;
     top: 0;
@@ -16,6 +17,7 @@ header {
     align-items: center;
     z-index: 10000;
 }
+/* Cabeçalho, logo */
 header .logo {
     position: relative;
     color: #fff;
@@ -23,24 +25,30 @@ header .logo {
     font-weight: 700;
     font-size: 2em;
 }
+/* Cabeçalho, lista não ordenada */
 header ul {
     position: relative;
     display: flex;
     gap: 40px;
 }
+/* Cabeçalho, lista não ordenada, lista */
 header ul li {
     list-style: none;
 }
+/* Cabeçalho, lista não ordenada, lista, link */
 header ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
     font-size: 1.25em;
 }
+/* Cabeçalho, lista não ordenada, lista.ATIVA, link
+   Cabeçalho, lista não ordenada, lista:HOVER, link */
 header ul li.active a,
 header ul li:hover a{
     color: #30fe6c;
 }
+/* Seção home */
 #home {
     position: relative;
     width: 100%;
@@ -50,4 +58,26 @@ header ul li:hover a{
     justify-content: space-between;
     align-items: center;
     padding: 100px;
+}
+/* Home, conteudo */
+#home .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    z-index: 10;
+}
+/* Home, conteudo, título */
+#home .content h2 {
+    position: relative;
+    font-size: 5em;
+    color: #30fe6c;
+}
+/* Home, conteudo, parágrafo */
+#home .content p {
+    position: relative;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.6em;
 }
