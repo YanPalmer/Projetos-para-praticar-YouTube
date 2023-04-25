@@ -89,18 +89,30 @@
         </div>
         <div class="content">
             <a href="#">
-                dummy@email.name
+                <ion-icon name="mail-outline"></ion-icon>dummy@email.name
             </a>
             <a href="#">
-                +123 000 000 0000
+                <ion-icon name="call-outline"></ion-icon>+123 000 000 0000
             </a>
             <a href="#">
-                skype
+                <ion-icon name="logo-skype"></ion-icon>skype
             </a>
             <a href="#">
-                whatsapp
+                <ion-icon name="logo-whatsapp"></ion-icon>whatsapp
             </a>
         </div>
+        <div class="center">
+            <p class="copyrights">Copyright © 2023 <a href="#">Online Tutorials</a>. All right Reserved</p>
+        </div>
     </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <scriptad>
+        let list = document.querySelectorAll(".nav li");
+        function active() {
+            list.forEach((i) => i.classList.remove("active"))
+        }
+    </scriptad>
 </body>
 </html>
