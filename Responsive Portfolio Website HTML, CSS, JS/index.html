@@ -108,11 +108,15 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <scriptad>
+    <script>
         let list = document.querySelectorAll(".nav li");
         function active() {
-            list.forEach((i) => i.classList.remove("active"))
+            list.forEach((i) =>
+            i.classList.remove("active"));
+            this.classList.add("active");
         }
-    </scriptad>
+        list.forEach((i) =>
+        i.addEventListener("click", active));
+    </script>
 </body>
 </html>
