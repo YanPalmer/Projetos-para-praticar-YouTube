@@ -109,6 +109,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
+        // Script para ativar a barra de navegação
         let list = document.querySelectorAll(".nav li");
         function active() {
             list.forEach((i) =>
@@ -116,7 +117,14 @@
             this.classList.add("active");
         }
         list.forEach((i) =>
-        i.addEventListener("click", active));
+        i.addEventListener("click", active)); 
+
+        // Script para mudar a nimação do toggle(alternar).
+        let menuToggle = document.querySelector(".menuToggle");
+        let header = document.querySelector("header");
+        menuToggle.onclick = function() {
+            header.classList.toggle("active");
+        }
     </script>
 </body>
 </html>
